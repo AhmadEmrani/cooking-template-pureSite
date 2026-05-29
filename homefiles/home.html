@@ -12,6 +12,7 @@
     <script type="module" src="../components/site-header.js"></script>
     <script type="module" src="../components/home/site-categories.js"></script>
     <script type="module" src="../components/home/recipe-card.js"></script>
+    <script src="../scripts/home/slider.js" defer></script>
 
   </head>
   <body>
@@ -27,43 +28,146 @@
       icon-instagram="./homepage/004-instagram.svg"
     ></site-header>
     <main>
-        <section class="hero"">
-            <img id="badage-hero" src="./homepage/Badge.png" alt="">
-            <div class="hero-text">
-                <div class="tag-hero">
-                    <img src="./homepage/image 14.svg" alt="">
-                    <p>Hot Recipes</p>     
-                </div>
-                <h1>Spicy delicious chicken wings</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
-                <div class="info-hero-box">
-                    <div class="timer-hero-box">
-                        <img src="./homepage/Timer.svg" alt="Recipe 1">
-                        <p>30 Minutes</p>
-                    </div>
-                    <div class="type-hero-box">
-                         <img src="./homepage/ForkKnife.svg" alt="Recipe 2">
-                        <p>Chicken</p>
-                    </div>
-                </div>
-                <div class="personal-hero-info-main">
-                    <div id="personal-hero-info">
-                        <img src="./homepage/Ellipse 2.svg" alt="">
-                        <div>
-                            <p>John Smith</p>
-                            <p>15 March 2022</p>
-                        </div>
-                    </div>
-                    <button>
-                       <p>View Recipes</p>
-                       <img src="./homepage//PlayCircle.svg" alt="">
-                    </button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="./homepage/Mask Group.png" alt="">
-            </div>
+      <section class="hero-slider">
+          <div class="hero-container">
+              <!-- Slide 1 -->
+              <div class="hero active">
+                  <img id="badage-hero" src="./homepage/Badge.png" alt="">
+                  <div class="hero-text">
+                      <div class="tag-hero">
+                          <img src="./homepage/image 14.svg" alt="">
+                          <p>Hot Recipes</p>     
+                      </div>
+                      <h1>Spicy delicious chicken wings</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                      <div class="info-hero-box">
+                          <div class="timer-hero-box">
+                              <img src="./homepage/Timer.svg" alt="Recipe 1">
+                              <p>30 Minutes</p>
+                          </div>
+                          <div class="type-hero-box">
+                                <img src="./homepage/ForkKnife.svg" alt="Recipe 2">
+                              <p>Chicken</p>
+                          </div>
+                      </div>
+                      <div class="personal-hero-info-main">
+                          <div id="personal-hero-info">
+                              <img src="./homepage/Ellipse 2.svg" alt="">
+                              <div>
+                                  <p>John Smith</p>
+                                  <p>15 March 2022</p>
+                              </div>
+                          </div>
+                          <button>
+                              <p>View Recipes</p>
+                              <img src="./homepage/PlayCircle.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="hero-image">
+                      <img src="./homepage/Mask Group.png" alt="">
+                  </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="hero">
+                  <img id="badage-hero" src="./homepage/Badge.png" alt="">
+                  <div class="hero-text">
+                      <div class="tag-hero">
+                          <img src="./homepage/image 14.svg" alt="">
+                          <p>Trending Now</p>     
+                      </div>
+                      <h1>Creamy mushroom pasta</h1>
+                      <p>Delicious creamy pasta with fresh mushrooms and herbs, perfect for a quick dinner</p>
+                      <div class="info-hero-box">
+                          <div class="timer-hero-box">
+                              <img src="./homepage/Timer.svg" alt="Recipe 1">
+                              <p>25 Minutes</p>
+                          </div>
+                          <div class="type-hero-box">
+                                <img src="./homepage/ForkKnife.svg" alt="Recipe 2">
+                              <p>Pasta</p>
+                          </div>
+                      </div>
+                      <div class="personal-hero-info-main">
+                          <div id="personal-hero-info">
+                              <img src="./homepage/Ellipse 2.svg" alt="">
+                              <div>
+                                  <p>Sarah Johnson</p>
+                                  <p>20 March 2022</p>
+                              </div>
+                          </div>
+                          <button>
+                              <p>View Recipes</p>
+                              <img src="./homepage/PlayCircle.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="hero-image">
+                      <img src="./homepage/Mask Group.png" alt="">
+                  </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="hero">
+                  <img id="badage-hero" src="./homepage/Badge.png" alt="">
+                  <div class="hero-text">
+                      <div class="tag-hero">
+                          <img src="./homepage/image 14.svg" alt="">
+                          <p>Chef's Special</p>     
+                      </div>
+                      <h1>Grilled salmon with vegetables</h1>
+                      <p>Healthy and delicious grilled salmon served with seasonal vegetables</p>
+                      <div class="info-hero-box">
+                          <div class="timer-hero-box">
+                              <img src="./homepage/Timer.svg" alt="Recipe 1">
+                              <p>35 Minutes</p>
+                          </div>
+                          <div class="type-hero-box">
+                                <img src="./homepage/ForkKnife.svg" alt="Recipe 2">
+                              <p>Seafood</p>
+                          </div>
+                      </div>
+                      <div class="personal-hero-info-main">
+                          <div id="personal-hero-info">
+                              <img src="./homepage/Ellipse 2.svg" alt="">
+                              <div>
+                                  <p>Mike Chen</p>
+                                  <p>22 March 2022</p>
+                              </div>
+                          </div>
+                          <button>
+                              <p>View Recipes</p>
+                              <img src="./homepage/PlayCircle.svg" alt="">
+                          </button>
+                      </div>
+                  </div>
+                  <div class="hero-image">
+                      <img src="./homepage/Mask Group.png" alt="">
+                  </div>
+              </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button class="slider-btn prev-btn" aria-label="Previous slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+          <button class="slider-btn next-btn" aria-label="Next slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+
+          <!-- Indicators -->
+          <div class="slider-indicators">
+              <button class="indicator active" data-slide="0"></button>
+              <button class="indicator" data-slide="1"></button>
+              <button class="indicator" data-slide="2"></button>
+          </div>
         </section>
+
 
         <site-categories></site-categories>
 

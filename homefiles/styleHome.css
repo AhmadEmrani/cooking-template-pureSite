@@ -32,25 +32,62 @@ main {
   padding-bottom: 70px;
   font-family: inter;
 }
-.hero {
+
+
+
+.hero-slider {
   width: 80%;
   height: 640px;
   position: relative;
+  margin-top: 45px;
+  overflow: hidden;
+  border-radius: 35px;
+}
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  height: 640px;
+  position: absolute;
+  top: 0;
+  left: 0;
   min-height: 640px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 35px;
-  margin-top: 45px;
   background-color: #e7fafe;
   font-family: Inter;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+.hero.prev {
+  transform: translateX(-100%);
+}
+
 #badage-hero {
   position: absolute;
   top: 50px;
   left: auto;
+  z-index: 2;
 }
+
 .hero-text {
   width: 50%;
   box-sizing: border-box;
@@ -61,18 +98,21 @@ main {
   height: 100%;
   padding: 0px 30px;
 }
+
 .hero-text h1 {
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -4%;
   line-height: auto;
 }
+
 .hero-text > p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   opacity: 60%;
 }
+
 .hero-image {
   width: 50%;
   height: 100%;
@@ -84,6 +124,7 @@ main {
   object-fit: cover;
   border-radius: 0 35px 35px 0;
 }
+
 .tag-hero {
   width: fit-content;
   display: flex;
@@ -93,55 +134,157 @@ main {
   background-color: #ffff;
   border-radius: 40px;
 }
+
 .timer-hero-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
   background-color: hsl(0, 0%, 95%);
   border-radius: 30px;
   padding: 10px 20px;
 }
+
 .type-hero-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
   background-color: hsl(0, 0%, 95%);
   border-radius: 30px;
   padding: 10px 20px;
 }
+
 .info-hero-box {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 .personal-hero-info-main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
 }
+
 .personal-hero-info-main button {
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   border-radius: 16px;
   padding: 15px 30px;
   background-color: #000000;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.personal-hero-info-main button:hover {
+  background-color: #333;
+}
+
 #personal-hero-info {
   width: 50%;
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 #personal-hero-info div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
+
+/* Slider Navigation Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slider-btn:hover {
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Slider Indicators */
+.slider-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator:hover {
+  transform: scale(1.2);
+}
+
+.indicator.active {
+  background-color: #fff;
+  width: 32px;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+site-categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .categories {
   width: 80%;
