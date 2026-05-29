@@ -1,0 +1,341 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  border-bottom: 1px solid #ccc;
+}
+#main-div-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 60px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+#social-div-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+main {
+    font-family: Inter; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 40px 20px;
+}
+
+.blog-container {
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.blog-header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.blog-header p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    width: 80%;
+    display: flex;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+.search-form button {
+    font-family: inter;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+.blog-content-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 50px;
+}
+
+.main-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article-card {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.article-card > img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.article-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.article-content > p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #888;
+    font-size: 14px;
+}
+
+.author-info img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.author-info span {
+    color: #333;
+    font-weight: 500;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tasty-recipes h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.recipe-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.recipe-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.recipe-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+}
+
+.recipe-info span {
+    font-size: 14px;
+    color: #888;
+}
+
+.ad_card {
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #F5F5F5;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.membership {
+  width: 80%;
+  display: flex;
+  min-height: 450px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  background-color: #E7F9FD;
+  border-radius: 30px;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+.text-membership {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.text-membership h2 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -4%;
+}
+.text-membership p {
+  font-size: 16px;
+  color: #000000;
+  opacity: 60%;
+  max-width: 600px;
+  text-align: center;
+}
+.input-container-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 80px;
+  border-radius: 30px;
+  background-color: white;
+}
+.input-container-member input {
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: inherit;
+  border-top-right-radius:0px ;
+  border-bottom-right-radius: 0px;
+}
+.input-container-member button {
+  outline: none;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  width: 160px;
+  height: 60px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+#image-right-member {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-bottom-right-radius:inherit ;
+}
+#image-left-member {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-bottom-left-radius: inherit;
+}
+
+footer {
+  margin-top: 80px;
+  font-family: inter;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  gap: 10px;
+}
+.upper-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+}
+.upper-footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.upper-footer-logo img {
+  width: 110px;
+}
+.upper-footer-logo p {
+  font-weight: 400;
+  opacity: 60%;
+}
+.upper-footer-links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+#social-div-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 40px;
+}
