@@ -1,27 +1,4 @@
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 60px;
-  border-bottom: 1px solid #ccc;
-}
-#main-div-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 60px;
-  font-family: "Inter";
-  font-weight: 600;
-}
-#social-div-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
-}
+
 main {
   width: 100%;
   display: flex;
@@ -562,48 +539,4 @@ main {
 }
 .like-button-suggestion img {
     object-fit: cover;
-}
-
-footer {
-  font-family: inter;
-  width: 80%;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 70px;
-}
-.upper-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 40px;
-}
-.upper-footer-logo {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.upper-footer-logo img {
-  width: 110px;
-}
-.upper-footer-logo p {
-  font-weight: 400;
-  opacity: 60%;
-}
-.upper-footer-links {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-}
-#social-div-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
-  margin-top: 40px;
 }

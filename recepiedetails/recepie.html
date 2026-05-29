@@ -6,30 +6,24 @@
     <link rel="stylesheet" href="/publicCss/reset.css">
     <link rel="stylesheet" href="/publicCss/font.css">
     <link rel="stylesheet" href="recepie.css">
+    <script type="module" src="../components/membership-box.js"></script>
+    <script type="module" src="../components/site-footer.js"></script>
+    <script type="module" src="../components/site-header.js"></script>
     <title>Recepie</title>
 </head>
 <body>
-    <header>
-      <img src="./Recipe Details/Foodieland..svg" alt="Foodieland">
-       <div id="main-div-header">
-        <a href="../homefiles/home.html">Home</a>
-        <a href="../recepiedetails/recepie.html">Recipes</a>
-        <a href="../BloglistFiles/bllogList.html">Blog</a>
-        <a href="">Contact</a>
-        <a href="">About us</a>
-      </div>
-      <div id="social-div-header">
-        <figure>
-          <img src="./Recipe Details/001-facebook.svg" alt="Facebook" />
-        </figure>
-        <figure>
-          <img src="./Recipe Details/003-twitter.svg" alt="Twitter" />
-        </figure>
-        <figure>
-          <img src="./Recipe Details/004-instagram.svg" alt="Instagram" />
-        </figure>
-      </div>
-    </header>    
+    <site-header
+      logo="./Recipe Details/Foodieland..svg"
+      link-home="../homefiles/home.html"
+      link-recipes="../recepiedetails/recepie.html"
+      link-blog="../BloglistFiles/bllogList.html"
+      link-contact="#"
+      link-about="#"
+      icon-facebook="./Recipe Details/001-facebook.svg"
+      icon-twitter="./Recipe Details/003-twitter.svg"
+      icon-instagram="./Recipe Details/004-instagram.svg"
+    ></site-header>
+    
     <main>
         <section class="main-info-container">
             <section class="title-info">
@@ -256,23 +250,16 @@
                 <img src="./Recipe Details/Ads.png" alt="">
             </aside>
         </section>
-        <section class="membership">
-          <img src="./Recipe Details/Photo.png" alt="saladpic" id="image-right-member">
-          <img src="./Recipe Details/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="" id="image-left-member">
-          <div class="text-membership">
-            <h2>Deliciousness to your inbox</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,
-                   sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqut enim ad minim </p>   
-          </div>
-          <div class="input-container-member">
-            <input type="text" placeholder="Your email address...">
-            <button>
-                <p>Subscribe</p>
-            </button>
-          </div>
-        </section>
 
+        <membership-box
+          title="Deliciousness to your inbox"
+          text="Lorem ipsum dolor sit amet..."
+          placeholder="Your email address..."
+          button-text="Subscribe"
+          img-right="./Recipe Details/Photo.png"
+          img-left="./Recipe Details/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"
+        ></membership-box>
+        
         <section class="other-recepies">
             <h3>You may like these recipe too</h3>
             <div class="other-recepies-container">
@@ -347,30 +334,18 @@
             </div>
         </section>
     </main>
-    <footer>
-      <div class="upper-footer">
-        <div class="upper-footer-logo">
-          <img src="./Recipe Details/FoodielandFooter.svg" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>            
-        </div>
-        <div class="upper-footer-links">
-          <a href="">Recipes</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-          <a href="">About us</a>
-        </div>
-      </div>
-      <div id="social-div-footer">
-        <figure>
-          <img src="./Recipe Details/001-facebook.svg" alt="Facebook" />
-        </figure>
-        <figure>
-          <img src="./Recipe Details/003-twitter.svg" alt="Twitter" />
-        </figure>
-        <figure>
-          <img src="./Recipe Details/004-instagram.svg" alt="Instagram" />
-        </figure>
-        </div>
-    </footer>
+
+    <site-footer
+          logo="./Recipe Details/FoodielandFooter.svg"
+          description="Lorem ipsum dolor sit amet, consectetuipisicing elit,"
+          link-recipes="/recipes"
+          link-blog="/blog"
+          link-contact="/contact"
+          link-about="/about"
+          icon-facebook="./Recipe Details/001-facebook.svg"
+          icon-twitter="./Recipe Details/003-twitter.svg"
+          icon-instagram="./Recipe Details/004-instagram.svg"
+    ></site-footer>
+
 </body>
 </html>
