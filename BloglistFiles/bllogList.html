@@ -1,16 +1,18 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/publicCss/reset.css">
+    <link rel="stylesheet" href="/publicCss/reset.css" />
     <link rel="stylesheet" href="/publicCss/font.css" />
-    <link rel="stylesheet" href="/BloglistFiles/bloglistStyle.css">
+    <link rel="stylesheet" href="/BloglistFiles/bloglistStyle.css" />
     <script type="module" src="../components/membership-box.js"></script>
     <script type="module" src="../components/site-footer.js"></script>
     <script type="module" src="../components/site-header.js"></script>
-</head>
-<body>
+    <script type="module" src="../components//Blog/article-card.js"></script>
+    <script src="../scripts/blog/pagination.js"></script>
+  </head>
+  <body>
     <site-header
       logo="./BlogListPage/Foodieland..svg"
       link-home="../homefiles/home.html"
@@ -22,160 +24,296 @@
       icon-twitter="./BlogListPage/003-twitter.svg"
       icon-instagram="./BlogListPage/004-instagram.svg"
     ></site-header>
-    
+
     <main>
-        <section class="blog-container">
-            <div class="blog-header">
-                <h1>Blog & Article</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                <form class="search-form">
-                    <input type="search" placeholder="Search article, news or recipe...">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-            <div class="blog-content-grid">
-                <div class="main-articles">
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group.png" alt="Noodles in a bowl">
-                        <div class="article-content">
-                            <h2>Crochet Projects for Noodle Lovers</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2.svg" alt="Wade Warren">
-                                <span>Wade Warren</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group (1).png" alt="Vegetarian fruit bowl">
-                        <div class="article-content">
-                            <h2>10 Vegetarian Recipes To Eat This Month</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2 (1).svg" alt="Robert Fox">
-                                <span>Robert Fox</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group (2).png" alt="Chef in a kitchen">
-                        <div class="article-content">
-                            <h2>Full Guide to Becoming a Professional Chef</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2 (2).svg" alt="Dianne Russell">
-                                <span>Dianne Russell</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
+      <section class="blog-container">
+        <div class="blog-header">
+          <h1>Blog & Article</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <form class="search-form">
+            <input
+              type="search"
+              placeholder="Search article, news or recipe..."
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="blog-content-grid">
+          <div class="main-articles">
+            <article-card
+              image-src="./BlogListPage/Mask Group.png"
+              image-alt="Noodles in a bowl"
+              title="Crochet Projects for Noodle Lovers"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2.svg"
+              author-name="Wade Warren"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
 
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group (3).png" alt="Vegetarian Lasagna">
-                        <div class="article-content">
-                            <h2>Simple & Delicious Vegetarian Lasagna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2 (3).svg" alt="Leslie Alexander">
-                                <span>Leslie Alexander</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
+            <article-card
+              image-src="./BlogListPage/Mask Group (1).png"
+              image-alt="Vegetarian fruit bowl"
+              title="10 Vegetarian Recipes To Eat This Month"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (1).svg"
+              author-name="Robert Fox"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
 
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group (4).png" alt="Plantain and Pinto Stew">
-                        <div class="article-content">
-                            <h2>Plantain and Pinto Stew with Aji Verde</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2 (4).svg" alt="Courtney Henry">
-                                <span>Courtney Henry</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="article-card">
-                        <img src="./BlogListPage/Mask Group (5).png" alt="Office setup">
-                        <div class="article-content">
-                            <h2>We're Hiring a Communications Assistant!</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim</p>
-                            <div class="author-info">
-                                <img src="./BlogListPage/Ellipse 2 (5).svg" alt="Albert Flores">
-                                <span>Albert Flores</span>
-                                <time datetime="2021-11-12">12 November 2021</time>
-                            </div>
-                        </div>
-                    </article>
+            <article-card
+              image-src="./BlogListPage/Mask Group (2).png"
+              image-alt="Chef in a kitchen"
+              title="Full Guide to Becoming a Professional Chef"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (2).svg"
+              author-name="Dianne Russell"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (3).png"
+              image-alt="Vegetarian Lasagna"
+              title="Simple & Delicious Vegetarian Lasagna"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (3).svg"
+              author-name="Leslie Alexander"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (4).png"
+              image-alt="Plantain and Pinto Stew"
+              title="Plantain and Pinto Stew with Aji Verde"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (4).svg"
+              author-name="Courtney Henry"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (5).png"
+              image-alt="Office setup"
+              title="We're Hiring a Communications Assistant!"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (5).svg"
+              author-name="Albert Flores"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group.png"
+              image-alt="Noodles in a bowl"
+              title="Crochet Projects for Noodle Lovers"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2.svg"
+              author-name="Wade Warren"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (1).png"
+              image-alt="Vegetarian fruit bowl"
+              title="10 Vegetarian Recipes To Eat This Month"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (1).svg"
+              author-name="Robert Fox"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (2).png"
+              image-alt="Chef in a kitchen"
+              title="Full Guide to Becoming a Professional Chef"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (2).svg"
+              author-name="Dianne Russell"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (3).png"
+              image-alt="Vegetarian Lasagna"
+              title="Simple & Delicious Vegetarian Lasagna"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (3).svg"
+              author-name="Leslie Alexander"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (4).png"
+              image-alt="Plantain and Pinto Stew"
+              title="Plantain and Pinto Stew with Aji Verde"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (4).svg"
+              author-name="Courtney Henry"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (5).png"
+              image-alt="Office setup"
+              title="We're Hiring a Communications Assistant!"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (5).svg"
+              author-name="Albert Flores"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group.png"
+              image-alt="Noodles in a bowl"
+              title="Crochet Projects for Noodle Lovers"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2.svg"
+              author-name="Wade Warren"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (1).png"
+              image-alt="Vegetarian fruit bowl"
+              title="10 Vegetarian Recipes To Eat This Month"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (1).svg"
+              author-name="Robert Fox"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (2).png"
+              image-alt="Chef in a kitchen"
+              title="Full Guide to Becoming a Professional Chef"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (2).svg"
+              author-name="Dianne Russell"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (3).png"
+              image-alt="Vegetarian Lasagna"
+              title="Simple & Delicious Vegetarian Lasagna"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (3).svg"
+              author-name="Leslie Alexander"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+
+            <article-card
+              image-src="./BlogListPage/Mask Group (4).png"
+              image-alt="Plantain and Pinto Stew"
+              title="Plantain and Pinto Stew with Aji Verde"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim"
+              author-img="./BlogListPage/Ellipse 2 (4).svg"
+              author-name="Courtney Henry"
+              date-datetime="2021-11-12"
+              date-text="12 November 2021"
+            ></article-card>
+          </div>
+
+          <aside class="sidebar">
+            <div class="tasty-recipes">
+              <h3>Tasty Recipes</h3>
+              <div class="recipe-item">
+                <img
+                  src="./BlogListPage/Mask Group (6).png"
+                  alt="Chicken Meatballs"
+                />
+                <div class="recipe-info">
+                  <h4>Chicken Meatballs with Cream Cheese</h4>
+                  <span>By Andreas Paula</span>
                 </div>
-                <aside class="sidebar">
-                    <div class="tasty-recipes">
-                        <h3>Tasty Recipes</h3>
-                        <div class="recipe-item">
-                            <img src="./BlogListPage/Mask Group (6).png" alt="Chicken Meatballs">
-                            <div class="recipe-info">
-                                <h4>Chicken Meatballs with Cream Cheese</h4>
-                                <span>By Andreas Paula</span>
-                            </div>
-                        </div>
-                        <div class="recipe-item">
-                            <img src="./BlogListPage/Mask Group (7).png" alt="Bolognaise Ragu">
-                            <div class="recipe-info">
-                                <h4>Traditional Bolognaise Ragu</h4>
-                                <span>By Andreas Paula</span>
-                            </div>
-                        </div>
-                        <div class="recipe-item">
-                            <img src="./BlogListPage/Mask Group (8).png" alt="Chinese Dumplings">
-                            <div class="recipe-info">
-                                <h4>Pork and Chive Chinese Dumplings</h4>
-                                <span>By Andreas Paula</span>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="ad_card" src="./BlogListPage/Ads.png" alt="">
-                </aside>
+              </div>
+              <div class="recipe-item">
+                <img
+                  src="./BlogListPage/Mask Group (7).png"
+                  alt="Bolognaise Ragu"
+                />
+                <div class="recipe-info">
+                  <h4>Traditional Bolognaise Ragu</h4>
+                  <span>By Andreas Paula</span>
+                </div>
+              </div>
+              <div class="recipe-item">
+                <img
+                  src="./BlogListPage/Mask Group (8).png"
+                  alt="Chinese Dumplings"
+                />
+                <div class="recipe-info">
+                  <h4>Pork and Chive Chinese Dumplings</h4>
+                  <span>By Andreas Paula</span>
+                </div>
+              </div>
             </div>
-            <nav class="pagination">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">...</a>
-                <a href="#">&gt;</a>
-            </nav>
-        </section>
-        <section class="membership">
-          <img src="./BlogListPage/Photo.png" alt="saladpic" id="image-right-member">
-          <img src="./BlogListPage/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="" id="image-left-member">
-          <div class="text-membership">
-            <h2>Deliciousness to your inbox</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,
-                   sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqut enim ad minim </p>   
-          </div>
-          <div class="input-container-member">
-            <input type="text" placeholder="Your email address...">
-            <button>
-                <p>Subscribe</p>
-            </button>
-          </div>
-        </section>
+            <img class="ad_card" src="./BlogListPage/Ads.png" alt="" />
+          </aside>
+        </div>
+        <nav class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">...</a>
+          <a href="#">&gt;</a>
+        </nav>
+      </section>
+      <section class="membership">
+        <img
+          src="./BlogListPage/Photo.png"
+          alt="saladpic"
+          id="image-right-member"
+        />
+        <img
+          src="./BlogListPage/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"
+          alt=""
+          id="image-left-member"
+        />
+        <div class="text-membership">
+          <h2>Deliciousness to your inbox</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
+        </div>
+        <div class="input-container-member">
+          <input type="text" placeholder="Your email address..." />
+          <button>
+            <p>Subscribe</p>
+          </button>
+        </div>
+      </section>
     </main>
     <site-footer
-          logo="./BlogListPage/FoodielandFooter.svg"
-          description="Lorem ipsum dolor sit amet, consectetuipisicing elit,"
-          link-recipes="/recipes"
-          link-blog="/blog"
-          link-contact="/contact"
-          link-about="/about"
-          icon-facebook="./BlogListPage/001-facebook.svg"
-          icon-twitter="./BlogListPage/003-twitter.svg"
-          icon-instagram="./BlogListPage/004-instagram.svg"
+      logo="./BlogListPage/FoodielandFooter.svg"
+      description="Lorem ipsum dolor sit amet, consectetuipisicing elit,"
+      link-recipes="/recipes"
+      link-blog="/blog"
+      link-contact="/contact"
+      link-about="/about"
+      icon-facebook="./BlogListPage/001-facebook.svg"
+      icon-twitter="./BlogListPage/003-twitter.svg"
+      icon-instagram="./BlogListPage/004-instagram.svg"
     ></site-footer>
-   
-</body>
+  </body>
 </html>
