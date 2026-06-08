@@ -1,202 +1,201 @@
-
-
 main {
-    font-family: Inter; 
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    padding: 40px 20px;
+  font-family: Inter;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 40px 20px;
 }
 
 .blog-container {
-    width: 100%;
-    max-width: 1200px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
 .blog-header {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1000px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-bottom: 20px;
 }
 
 .blog-header h1 {
-    font-size: 56px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #000;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #000;
 }
 
 .blog-header p {
-    color: #666;
-    margin-bottom: 30px;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .search-form {
-    width: 80%;
-    display: flex;
-    border: 1px solid #E0E0E0;
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 10px 15px;
+  width: 80%;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px 15px;
 }
 
 .search-form input {
-    border: none;
-    outline: none;
-    padding: 15px 20px;
-    font-size: 16px;
-    flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  flex-grow: 1;
 }
 
 .search-form button {
-    font-family: inter;
-    border: none;
-    outline: none;
-    background-color: #000;
-    color: #fff;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-    border-radius: 12px;
+  font-family: inter;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
-
 .blog-content-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    gap: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
 }
 
 .main-articles {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .article-card {
-    display: flex;
-    gap: 25px;
-    align-items: center;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
 
 .article-card > img {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    flex-shrink: 0;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
 }
 
 .article-content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
 }
 
 .article-content > p {
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .author-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: #888;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #888;
+  font-size: 14px;
 }
 
 .author-info img {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }
 
 .author-info span {
-    color: #333;
-    font-weight: 500;
+  color: #333;
+  font-weight: 500;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .tasty-recipes h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .recipe-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .recipe-item img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .recipe-info h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 5px 0;
-    line-height: 1.4;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  line-height: 1.4;
 }
 
 .recipe-info span {
-    font-size: 14px;
-    color: #888;
+  font-size: 14px;
+  color: #888;
 }
 
 .ad_card {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .pagination a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-    background-color: #F5F5F5;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #f5f5f5;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .pagination a.active,
 .pagination a:hover {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 .membership {
   width: 80%;
@@ -207,7 +206,7 @@ main {
   align-items: center;
   gap: 50px;
   flex-direction: column;
-  background-color: #E7F9FD;
+  background-color: #e7f9fd;
   border-radius: 30px;
   padding: 40px 20px;
   margin-top: 40px;
@@ -247,7 +246,7 @@ main {
   width: 80%;
   padding: 10px 20px;
   border-radius: inherit;
-  border-top-right-radius:0px ;
+  border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .input-container-member button {
@@ -264,11 +263,23 @@ main {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  border-bottom-right-radius:inherit ;
+  border-bottom-right-radius: inherit;
 }
 #image-left-member {
   position: absolute;
   bottom: 0px;
   left: 0px;
   border-bottom-left-radius: inherit;
+}
+
+.search-result-message {
+  display: none;
+  margin-top: 14px;
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+}
+
+.search-result-message.show {
+  display: block;
 }
