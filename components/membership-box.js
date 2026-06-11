@@ -26,7 +26,7 @@ class MembershipBox extends HTMLElement {
         }
 
         .membership {
-          width: 80%;
+          width: 90%;
           margin: 0 auto; /* این خط برای وسط چین کردن خود section داخل کامپوننت */
           min-height: 450px;
           position: relative;

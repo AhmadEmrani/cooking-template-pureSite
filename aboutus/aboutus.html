@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/publicCss/reset.css" />
+    <link rel="stylesheet" href="/publicCss/font.css" />
+    <link rel="stylesheet" href="./aboutus.css" />
+    <script type="module" src="../components/membership-box.js"></script>
+    <script type="module" src="../components/site-footer.js"></script>
+    <script type="module" src="../components/site-header.js"></script>
+    <script type="module" src="../components/home/site-categories.js"></script>
+    <script type="module" src="../components/home/recipe-card.js"></script>
+    <script type="module" src="../components/card-recipe.js"></script>
+
+    <title>about us</title>
+  </head>
+  <body>
+    <site-header
+      logo="../assets/Foodieland..svg"
+      link-home="../homefiles/home.html"
+      link-recipes="../recepiedetails/recepie.html"
+      link-blog="../BloglistFiles/bllogList.html"
+      link-contact="#"
+      link-about="../aboutus/aboutus.html"
+      icon-facebook="../assets/001-facebook.svg"
+      icon-twitter="../assets/003-twitter.svg"
+      icon-instagram="../assets/004-instagram.svg"
+    ></site-header>
+    <main>
+      <div class="h1Container">
+        <h1>Contact us</h1>
+      </div>
+      <form action="">
+        <img src="./aboutusFolder/Group 13936.svg" alt="" />
+        <div class="aboutus-form">
+          <div class="two-input">
+            <div class="input-form">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="" />
+            </div>
+            <div class="input-form">
+              <label for="email">email</label>
+              <input type="email" name="email" id="" />
+            </div>
+          </div>
+          <div class="two-input">
+            <div class="input-form">
+              <label for="name">subject</label>
+              <input type="text" name="name" id="" />
+            </div>
+            <div class="input-form">
+              <label for="name">Enquiry type</label>
+              <input type="text" name="name" id="" />
+            </div>
+          </div>
+          <textarea name="" id=""></textarea>
+          <button>submit</button>
+        </div>
+      </form>
+      <membership-box
+        title="Deliciousness to your inbox"
+        text="Lorem ipsum dolor sit amet..."
+        placeholder="Your email address..."
+        button-text="Subscribe"
+        img-right="../assets/Photo.png"
+        img-left="../assets/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"
+      ></membership-box>
+      <section class="other-recepies">
+        <h3>Check out the delicious recipe</h3>
+        <div class="other-recepies-container">
+          <card-recipe-day
+            image="./aboutusFolder/Mask Group (9).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="../assets/like.svg"
+            icon-timer="../assets/Timer.svg"
+            icon-fork="../assets/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./aboutusFolder/Mask Group (10).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="../assets/unlike.svg"
+            icon-timer="../assets/Timer.svg"
+            icon-fork="../assets/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./aboutusFolder/Mask Group (11).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="../assets/unlike.svg"
+            icon-timer="../assets/Timer.svg"
+            icon-fork="../assets/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./aboutusFolder/Mask Group (12).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="../assets/like.svg"
+            icon-timer="../assets/Timer.svg"
+            icon-fork="../assets/ForkKnife.svg"
+          ></card-recipe-day>
+        </div>
+      </section>
+    </main>
+    <site-footer
+      logo="../assets/FoodielandFooter.svg"
+      description="Lorem ipsum dolor sit amet, consectetuipisicing elit,"
+      link-recipes="/recipes"
+      link-blog="/blog"
+      link-contact="/contact"
+      link-about="/about"
+      icon-facebook="../assets/001-facebook.svg"
+      icon-twitter="../assets/003-twitter.svg"
+      icon-instagram="../assets/004-instagram.svg"
+    ></site-footer>
+  </body>
+</html>

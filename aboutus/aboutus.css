@@ -1,0 +1,146 @@
+main {
+  width: 100%;
+  font-family: Inter;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 40px 40px;
+}
+h1 {
+  color: black;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: -4%;
+  width: 100%;
+  margin: 0;
+}
+.h1Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+form {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+  gap: 20px;
+}
+form img {
+  width: 30%;
+}
+.aboutus-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.two-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.input-form label {
+  font-size: 12px;
+  letter-spacing: 8%;
+  color: rgba(0, 0, 0, 0.8);
+}
+.input-form input {
+  height: 60px;
+  outline: none;
+  border: 1px solid rgba(170, 168, 168, 0.5);
+  border-radius: 12px;
+  padding: 10px;
+}
+.aboutus-form textarea {
+  resize: none;
+  height: 200px;
+  border: 1px solid rgba(170, 168, 168, 0.5);
+  border-radius: 12px;
+  padding: 10px;
+}
+.aboutus-form button {
+  width: 25%;
+  height: 65px;
+  border-radius: 16px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.other-recepies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 60px;
+}
+.other-recepies > h3 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.other-recepies-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.card-recepie-day {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 295px;
+}
+.card-recepie-day > P {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+}
+.info-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.info-card-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.like-button-suggestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.like-button-suggestion img {
+  object-fit: cover;
+}
+
+membership-box {
+  margin-bottom: 100px;
+}
