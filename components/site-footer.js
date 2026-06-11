@@ -1,16 +1,17 @@
 class SiteFooter extends HTMLElement {
   connectedCallback() {
-    const logo = this.getAttribute('logo') || '';
-    const description = this.getAttribute('description') || '';
+    const logo = this.getAttribute("logo") || "";
+    const description = this.getAttribute("description") || "";
     const links = {
-      recipes: this.getAttribute('link-recipes') || '#',
-      blog: this.getAttribute('link-blog') || '#',
-      contact: this.getAttribute('link-contact') || '#',
-      about: this.getAttribute('link-about') || '#',};
+      recipes: this.getAttribute("link-recipes") || "#",
+      blog: this.getAttribute("link-blog") || "#",
+      contact: this.getAttribute("link-contact") || "#",
+      about: this.getAttribute("link-about") || "#",
+    };
     const icons = {
-      facebook: this.getAttribute('icon-facebook') || '',
-      twitter: this.getAttribute('icon-twitter') || '',
-      instagram: this.getAttribute('icon-instagram') || '',
+      facebook: this.getAttribute("icon-facebook") || "",
+      twitter: this.getAttribute("icon-twitter") || "",
+      instagram: this.getAttribute("icon-instagram") || "",
     };
 
     this.innerHTML = `
@@ -81,4 +82,4 @@ class SiteFooter extends HTMLElement {
   }
 }
 
-customElements.define('site-footer', SiteFooter);
+customElements.define("site-footer", SiteFooter);

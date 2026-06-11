@@ -9,6 +9,8 @@
     <script type="module" src="../components/membership-box.js"></script>
     <script type="module" src="../components/site-footer.js"></script>
     <script type="module" src="../components/site-header.js"></script>
+    <script type="module" src="../components/card-recipe.js"></script>
+
     <title>Recepie</title>
   </head>
   <body>
@@ -316,74 +318,45 @@
       <section class="other-recepies">
         <h3>You may like these recipe too</h3>
         <div class="other-recepies-container">
-          <div class="card-recepie-day">
-            <button class="like-button-suggestion">
-              <img src="./Recipe Details/like.svg" alt="" />
-            </button>
-            <img src="./Recipe Details/Mask Group (9).png" alt="" />
-            <p>Mixed Tropical Fruit Salad with Superfood Boosts</p>
-            <div class="info-card-container">
-              <div class="info-card-box">
-                <img src="./Recipe Details/Timer.svg" alt="Recipe 1" />
-                <p>30 Minutes</p>
-              </div>
-              <div class="info-card-box">
-                <img src="./Recipe Details/ForkKnife.svg" alt="Recipe 2" />
-                <p>Chicken</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-recepie-day">
-            <button class="like-button-suggestion">
-              <img src="./Recipe Details/unlike.svg" alt="" />
-            </button>
-            <img src="./Recipe Details/Mask Group (10).png" alt="" />
-            <p>Mixed Tropical Fruit Salad with Superfood Boosts</p>
-            <div class="info-card-container">
-              <div class="info-card-box">
-                <img src="./Recipe Details/Timer.svg" alt="Recipe 1" />
-                <p>30 Minutes</p>
-              </div>
-              <div class="info-card-box">
-                <img src="./Recipe Details/ForkKnife.svg" alt="Recipe 2" />
-                <p>Chicken</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-recepie-day">
-            <button class="like-button-suggestion">
-              <img src="./Recipe Details/unlike.svg" alt="" />
-            </button>
-            <img src="./Recipe Details/Mask Group (11).png" alt="" />
-            <p>Mixed Tropical Fruit Salad with Superfood Boosts</p>
-            <div class="info-card-container">
-              <div class="info-card-box">
-                <img src="./Recipe Details/Timer.svg" alt="Recipe 1" />
-                <p>30 Minutes</p>
-              </div>
-              <div class="info-card-box">
-                <img src="./Recipe Details/ForkKnife.svg" alt="Recipe 2" />
-                <p>Chicken</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-recepie-day">
-            <button class="like-button-suggestion">
-              <img src="./Recipe Details/like.svg" alt="" />
-            </button>
-            <img src="./Recipe Details/Mask Group (12).png" alt="" />
-            <p>Mixed Tropical Fruit Salad with Superfood Boosts</p>
-            <div class="info-card-container">
-              <div class="info-card-box">
-                <img src="./Recipe Details/Timer.svg" alt="Recipe 1" />
-                <p>30 Minutes</p>
-              </div>
-              <div class="info-card-box">
-                <img src="./Recipe Details/ForkKnife.svg" alt="Recipe 2" />
-                <p>Chicken</p>
-              </div>
-            </div>
-          </div>
+          <card-recipe-day
+            image="./Recipe Details/Mask Group (9).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="./Recipe Details/like.svg"
+            icon-timer="./Recipe Details/Timer.svg"
+            icon-fork="./Recipe Details/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./Recipe Details/Mask Group (10).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="./Recipe Details/unlike.svg"
+            icon-timer="./Recipe Details/Timer.svg"
+            icon-fork="./Recipe Details/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./Recipe Details/Mask Group (11).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="./Recipe Details/unlike.svg"
+            icon-timer="./Recipe Details/Timer.svg"
+            icon-fork="./Recipe Details/ForkKnife.svg"
+          ></card-recipe-day>
+
+          <card-recipe-day
+            image="./Recipe Details/Mask Group (12).png"
+            title="Mixed Tropical Fruit Salad with Superfood Boosts"
+            time="30 Minutes"
+            category="Chicken"
+            icon-like="./Recipe Details/like.svg"
+            icon-timer="./Recipe Details/Timer.svg"
+            icon-fork="./Recipe Details/ForkKnife.svg"
+          ></card-recipe-day>
         </div>
       </section>
     </main>

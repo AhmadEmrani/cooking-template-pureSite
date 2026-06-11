@@ -112,3 +112,58 @@ h1 {
   width: 20px;
   height: 20px;
 }
+
+.other-recepies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.other-recepies > h3 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.other-recepies-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.card-recepie-day {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 295px;
+}
+.card-recepie-day > P {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+}
+.info-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.info-card-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.like-button-suggestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.like-button-suggestion img {
+  object-fit: cover;
+}
