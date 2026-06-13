@@ -12,6 +12,7 @@
     <script type="module" src="../components/home/site-categories.js"></script>
     <script type="module" src="../components/home/recipe-card.js"></script>
     <script type="module" src="../components/card-recipe.js"></script>
+    <script defer src="../scripts/aboutus/inputDropDown.js"></script>
     <script src="../scripts/recepieClick.js"></script>
 
     <title>about us</title>
@@ -51,8 +52,15 @@
               <input type="text" name="name" id="" />
             </div>
             <div class="input-form">
-              <label for="name">Enquiry type</label>
-              <input type="text" name="name" id="" />
+              <label>Enquiry type</label>
+              <div class="dropdown-selected" id="input-option">
+                Select an option
+              </div>
+              <ul class="options options-hidden" id="options">
+                <li>membership</li>
+                <li>cooking</li>
+                <li>chefs problem</li>
+              </ul>
             </div>
           </div>
           <textarea name="" id=""></textarea>
