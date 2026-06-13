@@ -26,5 +26,4 @@ class ArticleCard extends HTMLElement {
   }
 }
 
-// معرفی کامپوننت به مرورگر
 customElements.define("article-card", ArticleCard);

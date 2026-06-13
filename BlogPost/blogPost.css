@@ -9,16 +9,18 @@ main {
   gap: 70px;
   padding: 40px 40px;
 }
+
 h1 {
   color: black;
   font-size: 64px;
   font-weight: 600;
   font-family: Inter;
   text-align: center;
-  letter-spacing: -4%;
+  letter-spacing: -0.04em;
   width: 100%;
   margin: 0;
 }
+
 .h1Container {
   display: flex;
   flex-direction: column;
@@ -27,11 +29,13 @@ h1 {
   gap: 25px;
   width: 100%;
 }
+
 .infoHeaderContainer {
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
+
 #profileName {
   display: flex;
   flex-direction: row;
@@ -41,129 +45,263 @@ h1 {
   border-right: 1px solid gray;
   padding-right: 20px;
 }
+
 #profileName p {
   color: black;
   opacity: 80%;
 }
+
 .dateHeader {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .h1Container p {
   max-width: 1000px;
   text-align: center;
   color: gray;
   opacity: 90%;
 }
+
+.mainImage {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mainImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .mainQuestions {
   display: flex;
   flex-direction: row;
   padding: 0px 50px;
   gap: 10px;
+  width: 100%;
+  max-width: 1200px;
 }
+
 .questions {
   display: flex;
   flex-direction: column;
   width: 80%;
   gap: 100px;
 }
+
 .singleQuestion {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .titleQuestionSection {
   font-weight: 600;
   font-size: 24px;
 }
+
 .answer {
   color: black;
   opacity: 60%;
+  line-height: 1.7;
 }
+
+.singleQuestion img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .quotes {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .quotes > p {
   font-size: 36px;
-  letter-spacing: -4%;
-  background: #000000;
+  letter-spacing: -0.04em;
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.05) 0%,
     rgba(207, 202, 202, 0.05) 100%
   );
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px 20px;
+  /* border-left: 4px solid #ff642f; */
+  border-radius: 4px;
+  font-style: italic;
+  color: #333;
 }
+
 .socialMedia {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   width: 20%;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
 }
+
+.socialMedia > p {
+  font-size: 14px;
+  color: gray;
+  /* writing-mode: vertical-rl; */
+  text-orientation: mixed;
+}
+
 .socialMedia img {
   width: 20px;
   height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
+
+.socialMedia img:hover {
+  transform: scale(1.2);
+}
+
+/* ───── Carousel ───── */
 
 .other-recepies {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
-.other-recepies > h3 {
+
+.other-recepies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.other-recepies-header h3 {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.04em;
+  margin: 0;
 }
+
+.carousel-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #ff642f;
+  background: white;
+  color: #ff642f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: #ff642f;
+  color: white;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.other-recepies-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .other-recepies-container {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  transition: transform 0.4s ease;
 }
+
+/* ───── Card ───── */
+
 .card-recepie-day {
   display: flex;
   position: relative;
   flex-direction: column;
   gap: 20px;
-  max-width: 295px;
+  flex: 0 0 calc(25% - 19px);
 }
-.card-recepie-day > P {
+
+.card-recepie-day img.card-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.card-recepie-day > p {
   font-family: inherit;
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
 }
+
 .info-card-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 .info-card-box {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
+  color: gray;
+  font-size: 14px;
 }
+
+.info-card-box img {
+  width: 16px;
+  height: 16px;
+}
+
 .like-button-suggestion {
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
+  background: white;
   position: absolute;
   top: 15px;
   right: 30px;
   width: 48px;
   height: 48px;
   border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
 }
+
+.like-button-suggestion:hover {
+  transform: scale(1.1);
+}
+
 .like-button-suggestion img {
+  width: 20px;
+  height: 20px;
   object-fit: cover;
 }

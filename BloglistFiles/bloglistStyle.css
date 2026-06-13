@@ -86,6 +86,7 @@ main {
   display: flex;
   gap: 25px;
   align-items: center;
+  cursor: pointer;
 }
 
 .article-card > img {
