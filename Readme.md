@@ -435,23 +435,4 @@ https://github.com/AhmadEmrani
 Repository:
 https://github.com/AhmadEmrani/cooking-template-pureSite
 
----
 
-## ⭐ Support
-
-If you found this project useful, please consider giving it a **Star** on GitHub.
-
-Your support helps the project reach more developers and motivates future improvements.
-
----
-
-Made with ❤️ for food lovers and web developers.
-
-
-دستیار جی‌پی‌تی‌یار اینجاست!
-چت های من
-پروژه های من
-ابزارهای متن
-ورود به Sora
-ورود به ChatGPT
-ارتباط با پشتیبانی
