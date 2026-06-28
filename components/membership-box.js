@@ -123,6 +123,109 @@ class MembershipBox extends HTMLElement {
           height: auto;
           pointer-events: none;
         }
+
+        @media (max-width: 768px) {
+  :host {
+    margin: 35px auto;
+  }
+
+  .membership {
+    width: 100%;
+    min-height: auto;
+    gap: 28px;
+    border-radius: 22px;
+    padding: 40px 18px 150px;
+  }
+
+  .text-membership {
+    gap: 12px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .text-membership h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .text-membership p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .input-container-member {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    min-height: 64px;
+    border-radius: 20px;
+    padding: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .input-container-member input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .input-container-member button {
+    width: 120px;
+    height: 48px;
+    border-radius: 14px;
+    margin-right: 0;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  #image-right-member,
+  #image-left-member {
+    max-width: 42%;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 480px) {
+  .membership {
+    padding: 32px 14px 120px;
+    border-radius: 18px;
+  }
+
+  .text-membership h2 {
+    font-size: 24px;
+  }
+
+  .text-membership p {
+    font-size: 13px;
+  }
+
+  .input-container-member {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .input-container-member input {
+    text-align: center;
+    border-radius: 14px;
+  }
+
+  .input-container-member button {
+    width: 100%;
+    height: 46px;
+  }
+
+  #image-right-member,
+  #image-left-member {
+    max-width: 48%;
+  }
+}
+
       </style>
 
       <section class="membership">
