@@ -305,3 +305,177 @@ h1 {
   height: 20px;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  main {
+    gap: 40px;
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .h1Container {
+    gap: 16px;
+  }
+
+  .h1Container p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .infoHeaderContainer {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #profileName {
+    padding-right: 14px;
+    gap: 8px;
+  }
+
+  #profileName img {
+    width: 28px;
+    height: 28px;
+  }
+
+  #profileName p,
+  .dateHeader p {
+    font-size: 13px;
+  }
+
+  .mainImage {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .mainQuestions {
+    flex-direction: column;
+    padding: 0;
+    gap: 28px;
+    max-width: 100%;
+  }
+
+  .questions {
+    width: 100%;
+    gap: 34px;
+  }
+
+  .singleQuestion {
+    gap: 14px;
+  }
+
+  .titleQuestionSection {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .answer {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .singleQuestion img {
+    border-radius: 10px;
+  }
+
+  .quotes > p {
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .socialMedia {
+    width: 100%;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding-top: 6px;
+  }
+
+  .socialMedia > p {
+    font-size: 12px;
+  }
+
+  .socialMedia img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .other-recepies {
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .other-recepies-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .other-recepies-header h3 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .carousel-buttons {
+    gap: 10px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .other-recepies-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .other-recepies-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .other-recepies-container {
+    gap: 16px;
+    width: max-content;
+  }
+
+  .card-recepie-day {
+    flex: 0 0 240px;
+  }
+
+  .card-recepie-day > p {
+    font-size: 16px;
+  }
+
+  .info-card-container {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .info-card-box {
+    font-size: 13px;
+  }
+
+  .like-button-suggestion {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .like-button-suggestion img {
+    width: 16px;
+    height: 16px;
+  }
+}
