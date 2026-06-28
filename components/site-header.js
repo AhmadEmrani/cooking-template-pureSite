@@ -89,7 +89,7 @@ class SiteHeader extends HTMLElement {
             left: 0;
             width: 100%;
             flex-direction: column;
-            gap: 18px;
+            gap: 20px;
             padding: 16px 0;
             background: white;
             border-bottom: 1px solid #ccc;

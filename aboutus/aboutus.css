@@ -175,13 +175,155 @@ membership-box {
 }
 .dropdown-selected {
   width: 100%;
-  height: 100%;
   height: 60px;
-  height: inherit;
   cursor: pointer;
   padding: 12px 15px;
   border: 1px solid rgba(170, 168, 168, 0.5);
   border-radius: 12px;
   background-color: #fff;
   user-select: none;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  main {
+    gap: 40px;
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
+  form img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .aboutus-form {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .two-input {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .input-form {
+    width: 100%;
+  }
+
+  .input-form input,
+  .dropdown-selected {
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+  }
+
+  .aboutus-form textarea {
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box;
+  }
+
+  .aboutus-form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .options {
+    top: 88px;
+    z-index: 10;
+  }
+
+  .other-recepies {
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .other-recepies > h3 {
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .other-recepies-container {
+    width: 100%;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .card-recepie-day {
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  .card-recepie-day > p {
+    font-size: 16px;
+  }
+
+  .info-card-container {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .like-button-suggestion {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    right: 12px;
+  }
+
+  membership-box {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  form img {
+    max-width: 260px;
+  }
+
+  .input-form label {
+    font-size: 11px;
+  }
+
+  .input-form input,
+  .dropdown-selected {
+    height: 52px;
+  }
+
+  .aboutus-form button {
+    height: 52px;
+  }
+
+  .other-recepies > h3 {
+    font-size: 22px;
+  }
+
+  .card-recepie-day {
+    min-width: 220px;
+    max-width: 220px;
+  }
 }
